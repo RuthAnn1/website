@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Recipie Picker">
+        <meta name="Keywords" content="">
+        <link href="scss/Style.scss" rel="stylesheet">
+        <link href="scss/Style.css" rel="stylesheet" type="text/css">
+        <script src="Recipie.js"></script>
+        <title>Recipies</title>
+        <script>
+            function storeItems(){
+                let title = document.querySelector('#Name').value 
+                let indredients1 = document.querySelector('#Ingredient1').value 
+                let indredients2 = document.querySelector('#Ingredient2').value 
+                let indredients3 = document.querySelector('#Ingredient3').value 
+                let indredients4 = document.querySelector('#Ingredient4').value
+                let indredients5 = document.querySelector('#Ingredient5').value
+                let instruction1 = document.querySelector('#Instruction1').value
+                let instruction2 = document.querySelector('#Instruction2').value
+                let instruction3 = document.querySelector('#Instruction3').value
+                let instruction4 = document.querySelector('#Instruction4').value
+                let instruction5 = document.querySelector('#Instruction5').value
+                let servingSize = document.querySelector('#serving').value
+                let itemRecpie = {title:title, serving_Size:servingSize, Ingreadient_list:[indredients1,indredients2,indredients3, indredients4,indredients5], instructions:[instruction1, instruction2,instruction3, instruction4,instruction5] }
+                localStorage.setItem('itemRecipie', JSON.stringify(itemRecpie))
+                console.log(itemRecpie)
+                //I was able to figure out how to store the ingreadient and instructions in local storage now I think i need to use the breakfast, lunch and supper buttons to let the system know what array to append the input to.
+            }
+        </script>
+    </head>
+    <body>
+
+        <div id="container1">
+            <nav>
+                <ul>
+                    <li><a href="RecipiePicker.html">Home</a></li>
+                    <li><a href="enterRecipie.html"> Enter Recipe</a></li>
+                </ul>
+            </nav>
+            <header>
+                <h1>What Recipe Would you like to enter today?</h1>
+            </header>
+            <section>
+            <form action="">
+                <label for="RecipeName">Recpie Name:</label><br>
+                <input type="text" id="Name" placeholder="Cheddar Soup"><br>
+                <label for="Ingredients">Ingredients:</label><br>
+                <input type="text" id="Ingredient1" placeholder="Cheddar"><br>
+                <input type="text" id="Ingredient2" placeholder="Chicken Broth"><br>
+                <input type="text" id="Ingredient3" placeholder="salt"><br>
+                <input type="text" id="Ingredient4" placeholder="pepper"><br>
+                <input type="text" id="Ingredient5" placeholder="flour"><br>
+                <label for="Instructions">Instructions</label><br>
+                <input type="text" id="Instruction1" placeholder="Get the following 1 small sauce pan, a large spoon..."><br>
+                <input type="text" id="Instruction2" placeholder="Mix salt, pepper..."><br>
+                <input type="text" id="Instruction3" placeholder="turn stove onto..."><br>
+                <input type="text" id="Instruction4" placeholder="add the cheese.."><br>
+                <input type="text" id="Instruction5" placeholder="next step..."><br>
+                <label for="serving size">Serving Size</label><br>
+                <input type="number" id="serving" placeholder="1"><br>
+                <label for="Meal Choice">Choose a meal</label><br>
+                <input type="radio" id="breakfast" name="meal" value="breakfast">
+                <label for="breakfast">breakfast</label><br>
+                <input type="radio" id="lunch" name="meal" value="lunch">
+                <label for="lunch">lunch</label><br>
+                <input type="radio" id="supper" name="meal" value="supper">
+                <label for="supper">supper</label><br>
+                <input type="button" value="Submit"  onclick="storeItems()"> <input type="button" value="clear"> 
+          </form>
+            </section>
+        <aside>
+            <img src="Images/frying.jpg" alt="frying">
+        </aside>
+    </body>

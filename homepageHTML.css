@@ -1,0 +1,63 @@
+body{
+
+}
+h1{
+    text-align: center;
+    background-color: blueviolet;
+    text-shadow: 100px, 90px, 1000px, crimson;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 50px;
+  
+    
+
+}
+h2{
+    font-family:'Courier New', Courier, monospace;
+}
+aside{
+    display: block;
+    float: right;
+    background-color: bisque;
+    height: auto;
+    width: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 0%;
+}
+.all-browsers{
+    margin: 0;
+    padding: 5px;
+    
+}
+.all-browsers >h1, .browser{
+    margin: 10px;
+    padding: 5px;
+
+}
+.browser{
+    background-color: rgba(233, 227, 227,.7);
+}
+ol{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: aquamarine;
+}
+li a{
+    display: block;
+    float: left;
+    text-align: center;
+    padding: 20px 30px;
+    text-decoration: none;
+
+}
+li a:hover{
+    background-color: blue;
+    display: block;
+}
+a.active{
+    display: block;
+    background-color: brown;
+    padding: 20px;
+}

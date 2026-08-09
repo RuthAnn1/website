@@ -1,0 +1,112 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#container {
+  display: grid;
+  grid-template-areas: "nav nav nav nav nav nav nav nav nav nav nav nav" "body body body body body body body body body body body body" "header header header header header header  header header header header header me" "footer footer footer footer footer footer footer footer footer footer footer footer";
+  grid-template-rows: auto 1fr auto; /* Header, Body, and Footer take all available vertical space */
+  width: 100%;
+  margin: auto;
+  min-height: 100vh; /* Ensure the container takes at least the full viewport height */
+}
+
+body {
+  background: url(wood.png) no-repeat center center fixed;
+  background-size: cover;
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
+}
+
+nav {
+  grid-area: nav;
+  background-color: rgb(173, 138, 104);
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 1.5em;
+}
+
+nav li a {
+  color: black;
+}
+
+nav .active {
+  padding: 10px;
+}
+
+header {
+  grid-area: header;
+  background-color: rgb(102, 82, 81);
+  margin-top: 75px;
+  margin-bottom: 100px;
+  text-align: center;
+  padding-top: 100px;
+  border: 5px solid black;
+  color: rgb(255, 255, 255);
+}
+
+.me {
+  grid-area: me;
+  margin-top: 75px;
+  margin-bottom: 80px;
+}
+.me img[alt~=me] {
+  float: right;
+  width: 400px;
+  height: auto;
+  margin: auto;
+}
+
+footer {
+  grid-area: footer;
+  background-color: rgb(173, 138, 104);
+  padding: 20px;
+  text-align: center;
+}
+footer img[alt~=Link] {
+  float: left;
+  padding-right: 0.5em;
+  height: 50px;
+  width: auto;
+}
+footer img[alt~=Git] {
+  float: left;
+  height: 50px;
+  width: auto;
+}
+
+@media only screen and (max-width: 500px) {
+  #container {
+    display: grid;
+    grid-template-areas: "nav" "body" "header" "me" "footer";
+    width: 100%;
+  }
+  .me {
+    grid-area: me;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  img[alt~=me] {
+    display: block;
+    width: 10px;
+    height: auto;
+    margin: auto;
+  }
+  header {
+    grid-area: header;
+    background-color: rgb(102, 82, 81);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    padding-top: 50px;
+    border: 5px solid black;
+    color: rgb(255, 255, 255);
+  }
+}/*# sourceMappingURL=index.css.map */

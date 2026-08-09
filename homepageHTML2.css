@@ -1,0 +1,95 @@
+article, aside, footer,header,nav,section{
+    display: block;
+}
+
+.banner{
+    width: 100%;
+    display: block;
+}
+.banner > .banner-img{
+    width: 100%;
+    display: block;
+    height: auto;
+    overflow: hidden;
+}
+
+body{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(54, 66, 44);
+
+}
+
+section{
+    background-color: rgb(182, 59, 141);
+    margin-top: 3%;
+    padding: 1%;
+    text-align: center;
+    float: left;
+    width: 60%;
+
+}
+
+article{
+    background-color: rgb(246,230,240);
+    margin-top: 3%;
+    padding: 2% 4%;
+    width: auto;
+    
+}
+
+
+aside {
+    background-color: rgb(246,230,240);
+    float: right;
+    display: block;
+    padding: 3%;
+     margin-top: 2%;
+     margin-right: 2%;
+     width: 25%;
+}
+
+footer{
+    clear: both;
+    background-color: black;
+    padding: 5px 20px;
+}
+h1{
+    padding-bottom: 100px;
+   
+}
+
+h2{
+    font-size: 18px;
+    border:  rgb(246,230,240);
+    border-style: dotted;
+}
+figure{
+    position:relative;
+    float: left;
+}
+
+.navbar li a:hover{
+    background-color:#FAEBD7;
+    display: block;
+}
+
+
+.navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(199,134,171);
+   
+
+}
+
+li a{
+    float: left;
+    display: block;
+    color: rgb(78, 50, 50);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none; 
+}

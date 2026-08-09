@@ -1,0 +1,80 @@
+
+body{
+    background-color:rgb(55, 30, 35)!important;
+  }
+.container{
+    background-color: rgb(213,208,203);
+}
+@font-face {
+    font-family: Questa_Simple;
+    src: url("Fonts/2-Questa_Regular.otf")
+}
+nav{
+    background-color: rgb(103, 106, 107);
+    li{
+        list-style-type: none;
+    } 
+    .navbar li a:hover{
+        display: block;
+        background-color: rgb(176,184,165)
+    } 
+}
+li a:hover{
+    background-color:#FAEBD7;
+    display: block;
+}
+a.active {
+    display: block;
+    padding: 14px;
+    background-color: rgb(250, 209, 178);
+}
+.banner {
+    width: 100%;
+  }
+h1{
+     
+    text-align: center;
+    font-family: Questa_Simple;
+    font-weight: lighter;
+    font-size: 150%;
+    color:rgb(93, 62, 45)
+}
+h2{
+    font-size: 150%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+h3 {
+    text-align: center;
+  }
+  
+h4 {
+    background-color: rgb(223,160,143);
+    border: 2px solid black;
+    padding: 2%;
+    text-align: center;
+    color: black;
+  }
+  
+  aside {
+    background-color: rgb(142,117,90);
+    text-align: center;
+    border: 5px solid rgb(204, 213, 220);
+    color: rgb(213,208,203);
+    margin-left: .5%;
+  }
+  
+  footer {
+    background-color: rgb(103, 106, 107);
+    color: rgb(204, 213, 220);
+  }
+  div.container {
+    text-align: center;
+  }
+  ul{
+    display: inline-block;
+    text-align: left;
+  }
+  aside>h4{
+    margin-top: 2%;
+  }

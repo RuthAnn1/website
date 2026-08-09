@@ -1,0 +1,266 @@
+$Blue:rgb(0,160,199);;
+$Yellow:rgb(255,200,71);;
+$Green:rgb(74,157,91);;
+$header:rgb(186,204,218);
+@font-face {
+    font-family: heading;
+    src: url(../images/vast-shadow/VastShadow-Regular.ttf);
+  }
+#container1{
+    display: grid;
+    grid-template-areas: 
+    'nav nav  nav nav nav nav nav nav nav nav nav nav'
+    'header header header header header header header header header header header header'
+    'photo1 photo1 aside aside aside aside aside main photo photo photo photo'
+    'values values values values values values Cont Cont Cont Cont Cont Cont'
+    'heading heading heading heading heading heading heading heading heading heading heading heading'
+    'Winston Winston Winston Winston April April April April Martock Martock Martock Martock'
+    'footer footer footer footer footer footer footer footer footer footer footer footer';
+    width:95%;
+	margin:10px auto;
+}
+nav{
+    grid-area: nav;
+    background-color: $header;
+    padding: 20px;
+    text-align: center;
+    top: 10px;
+    position: sticky;
+    
+        img[alt~="logo"]
+        {
+            float: left;
+            height: 50px;
+            width: auto;
+            
+        }
+        li {
+            display: inline;
+            list-style-type: none;
+            margin-right: 1.5em;
+           
+
+        }
+        li a{
+            color: black
+        }
+        .active{
+            background-color: $Blue;
+            padding: 10px;
+    
+        }
+}
+header{
+    grid-area: header;
+    font-size: 50px;
+    margin-top: 7px;
+    text-align: center;
+    padding-bottom: 10px;
+    font-family:'heading', Courier, monospace;
+}
+aside{
+    grid-area: aside;
+}
+aside>h1{
+    text-align: center;
+}
+aside>p{
+    line-height: 32px;
+    padding: 5px;
+}
+main{
+    grid-area: main;
+    img[alt~="Beth"]
+    {
+
+        float: right;
+        width: 300px;
+        height: auto;
+        margin: .5em auto;
+        border-radius: 50%;
+    }
+}
+.photo{
+    grid-area: photo;
+    img[alt~="pawprint"]
+    {
+
+        float: left;
+        width: 200px;
+        height: auto;
+        margin: .5em;
+    }   
+}
+.photo1{
+    grid-area: photo1;
+    img[alt~="pawprint"]
+    {
+
+        float: right;
+        width: 200px;
+        height: auto;
+        margin: .5em;
+    }   
+}
+.Cont{
+        grid-area: Cont;
+        margin-left: 3px;
+        margin-bottom: 5px;
+}
+.values{
+    grid-area: values;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+.yellow{
+    background-color: $Yellow;
+    margin:3px;
+    padding: 10px;
+
+}
+.blue{
+    background-color: $Blue;
+    margin: 3px;
+    padding: 10px;
+}
+aside>h1{
+    background-color: $Green;
+    padding: 10px;
+}
+
+div>h3{
+    text-align: center;
+  }
+div>p{
+    line-height: 32px;
+}
+.heading{
+    grid-area: heading;
+    text-align: center;
+    background-color: $Green;
+}
+.Winston{
+    grid-area: Winston;
+    img[alt~="Winston"]
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100px;
+        height: auto;
+        margin: .5em auto;
+    }
+
+}
+.April{
+    grid-area: April;
+    margin-left: 20px;
+    margin-right: 20px;
+    img[alt~="April"]
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        width: 200px;
+        height: auto;
+        margin: .5em auto;
+    }
+}
+.Martock{
+    grid-area: Martock;
+    img[alt~="dog"]
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        width: 200px;
+        height: auto;
+        margin: .5em auto;
+    }
+}
+div > .AboutCat{
+   margin-top: 13%;
+   
+}
+
+footer{
+    grid-area: footer;
+    background-color: $header;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    img[alt~="logo"]
+    {
+        float: right;
+        height: 50px;
+        width: auto;
+    }
+    img[alt~="Facebook"]
+    {
+        float: left;
+        padding-right: .5em;
+        height: 50px;
+        width: auto;
+    }
+    img[alt~="youtube"]
+    {
+        float: left;
+        height: 50px;
+        width: auto;
+    }
+}
+@media only screen and (max-width: 400px) {
+    #container1{
+    display: grid;
+    grid-template-areas:
+    'nav'
+    'header'
+    'aside'
+    'main' 
+    'values'
+    'Cont'
+    'heading'
+    'Winston' 
+    'April'
+    'Martock'
+    'footer';
+    width: 100%;
+    }
+    .photo{
+        grid-area: photo;
+        img[alt~="pawprint"]
+        {
+    
+            float: left;
+            width: 200px;
+            height: auto;
+            margin: .5em;
+            display: none;
+        }   
+    }
+    .photo1{
+        grid-area: photo1;
+        img[alt~="pawprint"]
+        {
+    
+            float: right;
+            width: 200px;
+            height: auto;
+            margin: .5em;
+            display: none;
+        }   
+    }
+    main{
+        grid-area: main;
+        img[alt~="Beth"]
+        {
+            width: 300px;
+            height: auto;
+            margin: .5em auto;
+            border-radius: 50%;
+            display: block;
+        }
+  }
+}

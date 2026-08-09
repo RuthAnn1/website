@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Recipie Picker">
+        <meta name="Keywords" content="">
+        <link href="scss/Style.scss" rel="stylesheet">
+        <link href="scss/Style.css" rel="stylesheet" type="text/css">
+        <script src="Recipie.js"></script>
+        <title>Recipies</title>
+     
+        <script>
+            
+            function PageLoad(){
+                document.querySelector("#Breakfastoptions").style.display = "none"
+		        document.querySelector("#Lunchoptions").style.display = "none"
+		        document.querySelector("#supperoptions").style.display = "none"
+                //I am not sure why this is not working for dispaying the drop down menues.  I put them in the page load event so that when the page is loaded the drop down menues are not visible
+                //I figured out what was wrong with the function i forgot the () when I put page load in the body 
+
+            }
+        function complaints(){
+		if(document.querySelector("#contactType").value=="B"){
+			document.querySelector("#Breakfastoptions").style.display = "block"
+			document.querySelector("#Lunchoptions").style.display = "none"
+			document.querySelector("#supperoptions").style.display = "none"
+		}else if(document.querySelector("#contactType").value=="L"){
+			document.querySelector("#Breakfastoptions").style.display = "none"
+			document.querySelector("#Lunchoptions").style.display = "block"
+			document.querySelector("#supperoptions").style.display = "none"
+		}else if(document.querySelector("#contactType").value=="S"){
+			document.querySelector("#Breakfastoptions").style.display = "none"
+			document.querySelector("#Lunchoptions").style.display = "none"
+			document.querySelector("#supperoptions").style.display = "block"
+		
+		}
+	}
+    
+    console.log(recipie)
+    function celculateNewSeving(){
+     num = parseFloat(document.querySelector("#ingreadients"))
+     //num = parseInt(document.querySelector(Ingreadient_list))
+     console.log(num)
+     /* For this function I have been attemting to take the numbers out of the string.  Since each bullet point starts with a number I was thinking that
+     useing parse int would take the first numbers out of each of the string.  But both parse int and parse float are not seeming to work.  IF you look at the javascript file I have 
+     I also thought of concatinating the numbers to the sting but when I call it to the page it turns them all into strings.  I think this function should maybe call the indredients and add the numbers 
+     before they are concatinated into the string format.  I am not compleately sure how to make that work though,  I was happy that I got the on click event handler to work and remembered to put the tect input as a number
+     maybe putting the input as a string would have been better?  I am unsure on that idea though*/
+    }
+    function Beakfast(){
+        let selectedIndex =document.querySelector("#Breakfastoptions").selectedIndex-1
+        let selection = recipie[selectedIndex]
+        let JASONrecipie =JSON.stringify(selection)
+        document.querySelector("#selectedRecipie").innerHTML = selection.title 
+        document.querySelector("#serving_Size").innerHTML = selection.serving_Size  
+        document.querySelector("#ingreadients").innerHTML = '<ul><li>'+selection.Ingreadient_list.join('</li><li>')+'</ul></li>'
+        document.querySelector("#instructions").innerHTML = '<ol><li>'+selection.instructions.join('</li><li>')+'</0l></li>'
+    }
+    function Lunch(){
+        let selectedIndex =document.querySelector("#Lunchoptions").selectedIndex-1
+        let selection = luncRecipies[selectedIndex]
+        let JASONrecipie =JSON.stringify(selection)
+        document.querySelector("#selectedRecipie").innerHTML = selection.title 
+        document.querySelector("#serving_Size").innerHTML = selection.serving_Size  
+        document.querySelector("#ingreadients").innerHTML = '<ul><li>'+selection.Ingreadient_list.join('</li><li>')+'</ul></li>'
+        document.querySelector("#instructions").innerHTML = '<ol><li>'+selection.instructions.join('</li><li>')+'</ol></li>'
+    }
+    function supper(){
+        let selectedIndex =document.querySelector("#supperoptions").selectedIndex-1
+        let selection = supperRecipies[selectedIndex]
+        let JASONrecipie =JSON.stringify(selection)
+        document.querySelector("#selectedRecipie").innerHTML = selection.title 
+        document.querySelector("#serving_Size").innerHTML = selection.serving_Size  
+        document.querySelector("#ingreadients").innerHTML = '<ul><li>'+selection.Ingreadient_list.join('</li><li>')+'</ul></li>'
+        document.querySelector("#instructions").innerHTML = '<ol><li>'+selection.instructions.join('</li><li>')+'</ol></li>'
+    }
+    let arrBreakfast = []
+	arrBreakfast[0]="Olmlet";
+	arrBreakfast.push("Chocolate Chip Pancakes");
+	arrBreakfast.push("Waffels");
+
+	let arrlunch = []
+	arrlunch[0]= "Grilled Ham and cheese sandwich"
+	arrlunch.push("Veggie Quesadilla");
+	arrlunch.push("Chilli")
+
+	let arrsupper = []
+	arrsupper[0]= "Lesagna"
+	arrsupper.push("Spagettie");
+	arrsupper.push("Grilled Steak")
+        </script>
+    </head>
+    <body onload="PageLoad()">
+        <div id="container1">
+            <nav>
+                <ul>
+                    <li><a href="RecipiePicker.html">Home</a></li>
+                    <li><a href="enterRecipie.html"> Enter Recipies</a></li>
+                </ul>
+            </nav>
+            <header>
+                <h1>Welcome To Your Recipie page</h1>
+            </header>
+            <aside>
+                <img src="Images/mainphoto.jpg" alt="cooking">
+            </aside>
+            <section>
+                <h3>What Recipie would you like to cook today?</h3>
+                <div>
+                    <label> Recpies:
+                        <select name="contactType" id="contactType"  onchange="complaints()">
+                            <option value="V" >Please choose an option</option>
+                            <option value="B">Breafast</option>
+                              <option value="L">Lunch</option>
+                              <option value="S">Supper</option>
+                        </select>
+                      </label>
+                </div>
+                <select name="Breakfastoptions" id="Breakfastoptions" onchange="Beakfast()"> 
+                    <option value="V" >Please choose an option</option>
+                    <script> 
+                    for(i=0; i<arrBreakfast.length; i++)
+                      {
+                      document.write("<option value = '"+arrBreakfast[i]+"'>"+ arrBreakfast[i] + "</option>" )
+                      } 
+                      console.log(arrBreakfast)
+                    </script>
+                </select>
+                <select name="Lunchoptions" id="Lunchoptions" onchange="Lunch()"> 
+                    <option value="V" >Please choose an option</option>
+                    <script> 
+                    for(i=0; i<arrlunch.length; i++)
+                      {
+                      document.write("<option value = '"+arrlunch[i]+"'>"+ arrlunch[i] + "</option>" )
+                      } 
+                    </script>
+                </select>
+                <select name="supperoptions" id="supperoptions" onchange="supper()"> 
+                    <option value="V" >Please choose an option</option>
+                    <script> 
+                    for(i=0; i<arrsupper.length; i++)
+                      {
+                      document.write("<option value = '"+arrsupper[i]+"'>"+ arrsupper[i] + "</option>" );
+                      } 
+
+                    </script>
+                </select>
+                <img src="Images/baking.jpg" alt="baking"> 
+            </section>
+            <main>
+                <h3>The Recipie you selected:</h3>
+                <p id="selectedRecipie"></p>
+                <p>Serving Size</p>
+                <p id="serving_Size"></p>
+                <p id="ingreadients"></p>
+                <h5>instructions</h5>
+                <p id="instructions"></p>
+                <p>Change serving size:<input type="number" id="number" ></p>
+                <button onclick="celculateNewSeving()">Submit</button> 
+            </main>
+        </div>
+    </body>
+</html>

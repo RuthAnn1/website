@@ -1,0 +1,94 @@
+#container1 {
+  display: grid;
+  grid-template-areas: "nav nav  nav nav nav nav nav nav nav nav nav nav" "header header header header header header header header header header header header" "section section section section section section section aside aside aside aside aside  " "main main main main main main main main main main main main " "footer footer footer footer footer footer footer footer footer footer footer footer";
+  width: 95%;
+  margin: 10px auto;
+}
+
+nav {
+  grid-area: nav;
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+  text-align: center;
+  top: 10px;
+  position: sticky;
+}
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 1.5em;
+}
+nav li a {
+  color: white;
+}
+
+header {
+  grid-area: header;
+  background-color: rgb(85, 45, 8);
+  padding: 20px;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+aside {
+  grid-area: aside;
+  margin: 10px auto;
+}
+aside img[alt~=cooking] {
+  height: 500px;
+  width: auto;
+}
+aside img[alt~=frying] {
+  height: auto;
+  width: 500px;
+  margin-top: 10px;
+  margin-right: 0px;
+}
+
+section > form {
+  background-color: rgb(77, 54, 11);
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 0px;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  color: white;
+}
+
+section {
+  grid-area: section;
+  background-color: rgba(85, 45, 8, 0.5);
+  text-align: center;
+}
+section img[alt~=baking] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: auto;
+  margin: 0.5em auto;
+  border-radius: 50%;
+}
+
+main {
+  grid-area: main;
+}
+
+@media only screen and (max-width: 900px) {
+  #container1 {
+    display: grid;
+    grid-template-areas: "nav" "header" "aside" "section" "main";
+    width: 100%;
+  }
+}/*# sourceMappingURL=Style.css.map */
