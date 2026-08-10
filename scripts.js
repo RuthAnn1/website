@@ -22,8 +22,7 @@ const projectData = [
 const reviewPages = [
   { label: "Home", url: "index.html" },
   { label: "About", url: "about-new.html" },
-  { label: "Projects", url: "Projects-new.html" },
-  { label: "Review Hub", url: "review-pages.html" }
+  { label: "Projects", url: "Projects-new.html" }
 ];
 
 function createProjectCard(project) {
