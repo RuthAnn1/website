@@ -8,21 +8,21 @@ const projectData = [
   {
     title: "About",
     description: "Learn more about the updated site, services, and contact options.",
-    url: "about.html",
+    url: "about-new.html",
     image: "Portfolio/myPhoto.jpg"
   },
   {
     title: "Projects",
     description: "View the refreshed projects page and see the current work samples.",
-    url: "Projects.html",
+    url: "Projects-new.html",
     image: "Portfolio/Final/images/catDot.jpg"
   }
 ];
 
 const reviewPages = [
   { label: "Home", url: "index.html" },
-  { label: "About", url: "about.html" },
-  { label: "Projects", url: "Projects.html" },
+  { label: "About", url: "about-new.html" },
+  { label: "Projects", url: "Projects-new.html" },
   { label: "Review Hub", url: "review-pages.html" }
 ];
 
