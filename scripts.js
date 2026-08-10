@@ -33,7 +33,6 @@ const projectData = [
 
 const reviewPages = [
   { label: "Home", url: "index.html" },
-  { label: "About", url: "about.html" },
   { label: "Projects", url: "Projects.html" },
   { label: "Review Hub", url: "review-pages.html" },
   { label: "Rover & Whiskers", url: "Portfolio/Final/HomePage.html" },
