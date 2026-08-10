@@ -1,21 +1,39 @@
 const projectData = [
   {
-    title: "Home",
-    description: "Return to the new homepage and see the updated portfolio layout.",
-    url: "index.html",
-    image: "Portfolio/myPhoto.jpg"
-  },
-  {
-    title: "About",
-    description: "Learn more about the updated site, services, and contact options.",
-    url: "about-new.html",
-    image: "Portfolio/myPhoto.jpg"
-  },
-  {
-    title: "Projects",
-    description: "View the refreshed projects page and see the current work samples.",
-    url: "Projects-new.html",
+    title: "Rover & Whiskers",
+    description: "A responsive site built for a behavior specialist, with clear navigation and engaging visuals.",
+    url: "Portfolio/Final/HomePage.html",
     image: "Portfolio/Final/images/catDot.jpg"
+  },
+  {
+    title: "Savanna’s Coffee House",
+    description: "A friendly cafe landing page with warm branding and a polished homepage layout.",
+    url: "Portfolio/FinalProject/Index.html",
+    image: "Portfolio/FinalProject/Images/Coffee_portrait.jpg"
+  },
+  {
+    title: "Cocoa Site",
+    description: "A Bootstrap-powered cocoa project that demonstrates responsive design and content structure.",
+    url: "Portfolio/Cocoa/index.html",
+    image: "Portfolio/Cocoa/images/cocoabar.jpg"
+  },
+  {
+    title: "Montessori Project",
+    description: "A website focused on Montessori philosophy and learning resources.",
+    url: "Portfolio/Philosophy/index.html",
+    image: "Portfolio/Philosophy/imgs/blocksimg.jpg"
+  },
+  {
+    title: "About Norway",
+    description: "A React-based local Norway showcase with modern frontend interaction.",
+    url: "Portfolio/AboutNorway/dist/index.html",
+    image: "Portfolio/AboutNorway/src/componatns/photos/nature.jpg"
+  },
+  {
+    title: "Summit Site",
+    description: "A dedicated dog rescue project page with supporting adoption content.",
+    url: "Portfolio/Summit_site/index.html",
+    image: "Portfolio/Summit_site/Images/huskypuppy.jpg"
   }
 ];
 
