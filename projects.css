@@ -101,8 +101,6 @@ h3 {
 
 .photo {
   grid-area: photo;
-  margin-bottom: 56px;
-  margin-top: 100px;
 }
 .photo img[alt~=MyPhoto] {
   display: block;
@@ -110,6 +108,10 @@ h3 {
   width: 400px;
   height: auto;
   margin: auto;
+}
+.photo {
+  margin-bottom: 56px;
+  margin-top: 100px;
 }
 
 footer {
@@ -139,8 +141,6 @@ footer img[alt~=Git] {
   }
   .photo {
     grid-area: photo;
-    margin-bottom: 56px;
-    margin-top: 5px;
   }
   .photo img[alt~=MyPhoto] {
     display: block;
@@ -148,6 +148,10 @@ footer img[alt~=Git] {
     width: 400px;
     height: auto;
     margin: auto;
+  }
+  .photo {
+    margin-bottom: 56px;
+    margin-top: 5px;
   }
   .about {
     grid-area: about;

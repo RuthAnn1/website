@@ -1,35 +1,81 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="description" content="Rovers and Whiskers Dog Training">
-        <meta name="Keywords" content="Ruth Ann, Web Deveopment, CSS, HTML, Front End">
-        <link href="index.scss" rel="stylesheet">
-        <link href="index.css" rel="stylesheet" type="text/css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div  id="container">
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="Projects.html"> Projects</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-        <header>
-           <h1>Ruth Ann</h1>
-           <h1>Aakre</h1>
-        </header>
-        <section  class="me">
-            <img src="me.png" alt="me">
-        </section>
-        <footer>
-            <a href="https://www.linkedin.com/in/ruth-aakre-8a277b272/" target="_blank"><img src="Portfolio/linkin.jpg" alt="Link"></a> 
-            <a href="https://github.com/RuthAnn1" target="_blank"><img src="Portfolio/github.png" alt="Git"></a> 
-                
-        </footer>
-    </div>
-    </body>
-  
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Ruth Ann Aakre portfolio and web presence" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ruth Ann Aakre | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="top-nav">
+      <a class="brand" href="index.html">Ruth Ann</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+      <nav id="main-nav">
+        <ul class="nav-list">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="Projects.html">Projects</a></li>
+          <li><a href="review-pages.html">Review Hub</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle" class="button button-secondary">Toggle theme</button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Web designer & storyteller</p>
+          <h1>Bring your portfolio to life with a clean, modern website.</h1>
+          <p>Hi, I’m Ruth Ann. I create responsive pages, thoughtful project layouts, and polished visuals for learning and business sites.</p>
+          <div class="hero-actions">
+            <a class="button" href="Projects.html">View projects</a>
+            <button class="button button-secondary" id="toggle-story">Read my story</button>
+          </div>
+          <div id="story-hidden" class="hide">
+            <p>My background in education and technology helps me build sites that are both beautiful and easy to use. I enjoy connecting with people through design and creating clarity from complex ideas.</p>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="Portfolio/myPhoto.jpg" alt="Ruth Ann portrait" />
+        </div>
+      </section>
+
+      <section class="section preview-section">
+        <div class="eyebrow">Featured work</div>
+        <div id="project-grid" class="preview-grid"></div>
+      </section>
+
+      <section class="section contact-section">
+        <div class="card">
+          <h2>Let’s build something better</h2>
+          <p>If you want a refreshed website or a strong portfolio, send a quick note and I’ll reply soon.</p>
+          <form id="contact-form">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="Your email" required />
+            </label>
+            <label>
+              Message
+              <textarea name="message" placeholder="Tell me about your project" required></textarea>
+            </label>
+            <button type="submit" class="button">Send message</button>
+            <div id="form-status" class="form-status"></div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Built with HTML, CSS, and JavaScript.</p>
+      <p><a href="https://www.linkedin.com/in/ruth-aakre-8a277b272/" target="_blank">LinkedIn</a> · <a href="https://github.com/RuthAnn1" target="_blank">GitHub</a></p>
+    </footer>
+  </div>
+  <script src="scripts.js"></script>
+</body>
 </html>

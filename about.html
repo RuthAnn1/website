@@ -1,43 +1,98 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="description" content="Rovers and Whiskers Dog Training">
-        <meta name="Keywords" content="Ruth Ann, Web Deveopment, CSS, HTML, Front End">
-        <link href="projects.css" rel="stylesheet">
-        <link href="projects.scss" rel="stylesheet" type="text/css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-</html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="About Ruth Ann Aakre" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Ruth Ann Aakre</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
 <body>
-    <div id="container">
-    <nav>
-        <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="Projects.html"> Projects</a></li>
-            <li><a href="about.html">About</a></li>
+  <div class="page-shell">
+    <header class="top-nav">
+      <a class="brand" href="index.html">Ruth Ann</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+      <nav id="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="about.html">About</a></li>
+          <li><a href="Projects.html">Projects</a></li>
+          <li><a href="review-pages.html">Review Hub</a></li>
         </ul>
-    </nav>
-    <section class="about">
-        <h1>Ruth Ann</h1>
-        <h3>About Me</h3>
-        <p>I love talking to and meeting new people. It seems to be engrained in my DNA. When I was young, I used to walk up to strangers and talk to them. I viewed everyone as a friend and strived to make their day better. The ability to understand people has helped me both in the education and technology field. I have always loved both teaching and technology. Because of my teacher’s heart and my passion for programming. In the future I would love to use both of my skills to help teach and lead new people in the programing field.</p>
- 
-        <p>I changed career paths and switched from my bachelors in education to obtaining a degree in Computer Information Systems from Des Moines Area community college. The knowledge and experience I have gained in education has helped me immensely in the field of computer science. Large projects within the degree was always paired with a presentation about what the project was about. I absolutely love presenting and sharing information that I have a solid understanding of. I have always enjoyed learning new technologies. Giving a presentation on a project I programmed was an amazing experience. 
-            One of my favorite projects I made was named My Pet. It was a game programmed in Python where the player could choose the type of pet they could take care of. The game was fun to see the design path as we neared completion of it. A fun but challenging part of the game development was communicating between the team I was in and the 2D artist I found that made the sprites for the game. However, I enjoy interpersonal communication and it was exciting to see all the pieces come together.</p> 
-            
-        <p>Feel free to reach out to me if you have any questions on the projects I have made or if you need any clarification.</p>
+      </nav>
+      <button id="theme-toggle" class="button button-secondary">Toggle theme</button>
+    </header>
 
-    </section>
-    <section class = "photo">
-        <img src="Portfolio/myPhoto.jpg" alt ="MyPhoto">
+    <main>
+      <section class="hero">
+        <div>
+          <p class="eyebrow">About me</p>
+          <h1>I build websites that are thoughtful, responsive, and easy to read.</h1>
+          <p>I love meeting new people, sharing ideas, and helping others learn. My background in education and technology gives me a strong foundation for building meaningful digital experiences.</p>
+          <div class="hero-actions">
+            <a class="button" href="Projects.html">See projects</a>
+            <button class="button button-secondary" id="toggle-story">Read my full story</button>
+          </div>
+          <div id="story-hidden" class="hide">
+            <p>When I was young, I often walked up to strangers and introduced myself. I believe everyone has a story, and that curiosity shaped my path into web design and development.</p>
+            <p>I moved from education into computer information systems, where I learned how to turn ideas into working projects. One of my favorite assignments was a Python game called My Pet, where players cared for a virtual creature and I worked with a teammate and an artist to bring it to life.</p>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="Portfolio/myPhoto.jpg" alt="Portrait of Ruth Ann" />
+        </div>
+      </section>
 
-    </section>
-    <footer>
-        <a href="https://www.linkedin.com/in/ruth-aakre-8a277b272/" target="_blank"><img src="Portfolio/linkin.jpg" alt="Link"></a> 
-        <a href="https://github.com/RuthAnn1" target="_blank"><img src="Portfolio/github.png" alt="Git"></a> 
-            
+      <section class="section">
+        <div class="card">
+          <h2>What I enjoy</h2>
+          <p>Designing clear layouts, crafting helpful content, and turning complex ideas into easy-to-use pages. I enjoy presenting projects, teaching others, and working on websites that look polished on every device.</p>
+        </div>
+      </section>
+
+      <section class="section preview-section">
+        <div class="eyebrow">Career highlights</div>
+        <div class="preview-grid">
+          <article class="preview-card">
+            <h3>Education & communication</h3>
+            <p>I bring a teacher’s perspective to development, which makes it easier to explain technical solutions and work in teams.</p>
+          </article>
+          <article class="preview-card">
+            <h3>Project presentations</h3>
+            <p>I enjoy showing how a website works and why design decisions matter, especially when sharing with clients or classmates.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact-section">
+        <div class="card">
+          <h2>Want a stronger website?</h2>
+          <p>Use the contact form to share your project idea and I’ll follow up.</p>
+          <form id="contact-form">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="Your email" required />
+            </label>
+            <label>
+              Message
+              <textarea name="message" placeholder="Tell me about your goals" required></textarea>
+            </label>
+            <button type="submit" class="button">Send message</button>
+            <div id="form-status" class="form-status"></div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Want to see how it feels? Open the review hub.</p>
+      <p><a href="review-pages.html">Review Hub</a></p>
     </footer>
-</div>
+  </div>
+  <script src="scripts.js"></script>
 </body>
 </html>

@@ -1,0 +1,64 @@
+@use './variables' as *;
+.about-page {
+  max-width: 1000px;
+  margin: 1.5rem auto;
+  padding: 1rem;
+}
+
+.about-page h2 {
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-size: 50px;
+}
+
+.author-layout {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 1.25rem;
+  align-items: start;
+  background: var(--winter-ice, $white);
+  padding: 1.25rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px $black-blue;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.author-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 2px solid $black-blue;
+}
+
+.author-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.author-name {
+  font-size: 1.35rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--winter-rock, $purple-dark);
+}
+
+.author-bio {
+  color: var(--winter-rock, $black);
+  line-height: 1.6;
+}
+
+@media (max-width: 720px) {
+  .author-layout {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+  .author-photo {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+  }
+}
