@@ -1,47 +1,58 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="description" content="Rovers and Whiskers Dog Training">
-        <meta name="Keywords" content="Ruth Ann, Web Deveopment, CSS, HTML, Front End">
-        <link href="projects.css" rel="stylesheet">
-        <link href="projects.scss" rel="stylesheet" type="text/css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    </html>
-    <body >
-        <div id="container">
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="Projects.html"> Projects</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-        <section class="Project1">
-            <h1>Maria Montessori</h1>
-            <p>This is an on going site about Montessori Education<a href="Portfolio/Philosophy/index.html" target="_blank"> here </a> to go to the site.</p>
-            <img src="Portfolio/Philosophy/imgs/blocksimg.jpg" alt="puppy">
-        </section>
-        <section class="Project2">
-            <h1>Savanna’s Coffee House</h1>
-            <p>Here is one of my first projects.  I created a webpage for a cafe.  I liked the colors I chose for the site and how they complimented the site. Click <a href="Portfolio/FinalProject/Index.html" target="_blank"> here </a> to go to the site.</p>
-            <img src="Portfolio/FinalProject/Images/Coffee_portrait.jpg" alt="Coffee_cup">
-        </section>
-        <section class="Project3">
-            <h1>Cocoa Site</h1>
-            <p>I made this site about cocoa using bootstrap.  I enjoyed learning how bootstrap can help with web development. Click <a href="Portfolio/Cocoa/index.html" target="_blank"> here </a> to go to the site.</p>
-            <img src="Portfolio/Cocoa/images/cocoabar.jpg" alt="cocoa">
-        </section>
-        <section class="Project4">
-            <h1>Rover and Whiskers</h1>
-            <p>This is the latest site I have made.  It was built for a behavior specialist. I am most proud of how responsive it is for a variety of devices. Click <a href="Portfolio/Final/HomePage.html" target="_blank"> here </a> to go to the site.</p>
-            <img src="Portfolio/Final/images/catDot.jpg" alt="cat">
-        </section>
-        <footer>
-            <a href="https://www.linkedin.com/in/ruth-aakre-8a277b272/" target="_blank"><img src="Portfolio/linkin.jpg" alt="Link"></a> 
-            <a href="https://github.com/RuthAnn1" target="_blank"><img src="Portfolio/github.png" alt="Git"></a>   
-        </footer>
-</div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Projects by Ruth Ann Aakre" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Ruth Ann Aakre</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="top-nav">
+      <a class="brand" href="index.html">Ruth Ann</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+      <nav id="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a class="active" href="Projects.html">Projects</a></li>
+          <li><a href="review-pages.html">Review Hub</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle" class="button button-secondary">Toggle theme</button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Featured projects</p>
+          <h1>Explore dynamic work that highlights responsive design and usability.</h1>
+          <p>These examples show websites built for audiences, projects, and modern presentation. Each page is designed to feel clean and easy to navigate.</p>
+        </div>
+        <div class="hero-image">
+          <img src="Portfolio/Final/images/catDot.jpg" alt="Project showcase" />
+        </div>
+      </section>
+
+      <section class="section preview-section">
+        <div class="eyebrow">Projects loaded from JavaScript</div>
+        <div id="project-grid" class="preview-grid"></div>
+      </section>
+
+      <section class="section">
+        <div class="card">
+          <h2>Why this approach?</h2>
+          <p>Using JavaScript to render project previews keeps the page dynamic and easy to update. You can add or change projects in one place without editing HTML for each card.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Want to compare the new design to the original pages?</p>
+      <p><a href="review-pages.html">Open the review hub</a></p>
+    </footer>
+  </div>
+  <script src="scripts.js"></script>
 </body>
 </html>

@@ -1,0 +1,108 @@
+@import '../styles/variables.scss';
+
+/* Header container */
+header {
+  background: $blue-dark;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* center all children horizontally */
+  text-align: center;
+  padding: 2rem 1rem;
+  gap: 1rem;
+}
+
+/* Title and tagline */
+.header-title h1 {
+  color: $pink-light;
+  margin: 0;
+  font-size: 1.9rem;
+  letter-spacing: 0.5px;
+}
+
+.tagline {
+  margin: 0;
+  font-size: 0.95rem;
+  color: $pink-light;
+}
+
+/* Hamburger button centered */
+.menu-button {
+  width: 44px;
+  height: 36px;
+  background: transparent;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 6px;
+  cursor: pointer;
+  align-self: center; /* THIS centers the button */
+}
+
+.menu-button .bar {
+  height: 3px;
+  background: $pink-light;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.menu-button.open .bar:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+.menu-button.open .bar:nth-child(2) {
+  opacity: 0;
+}
+.menu-button.open .bar:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+/* Navigation menu */
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 1rem 0;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.nav-menu.visible {
+  opacity: 1;
+  max-height: 500px;
+}
+
+.nav-link {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: $pink-light;
+  padding: 8px 12px;
+  border-radius: 6px;
+  width: 90%;
+  max-width: 200px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Desktop styles */
+@media (min-width: 720px) {
+  .menu-button {
+    display: none;
+  }
+
+  .nav-menu {
+    flex-direction: row;
+    justify-content: center;
+    max-height: none;
+    opacity: 1;
+    width: auto;
+  }
+
+  .nav-link {
+    width: auto;
+    padding: 8px 16px;
+  }
+}
