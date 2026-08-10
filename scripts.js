@@ -1,32 +1,20 @@
 const projectData = [
   {
-    title: "Rover and Whiskers",
-    description: "A responsive site built for a behavior specialist, with clear navigation and engaging visuals.",
-    url: "Portfolio/Final/HomePage.html",
-    image: "Portfolio/Final/images/catDot.jpg"
+    title: "Home",
+    description: "Return to the new homepage and see the updated portfolio layout.",
+    url: "index.html",
+    image: "Portfolio/myPhoto.jpg"
   },
   {
-    title: "Savanna’s Coffee House",
-    description: "A friendly cafe landing page with warm branding and a polished homepage layout.",
-    url: "Portfolio/FinalProject/Index.html",
-    image: "Portfolio/FinalProject/Images/Coffee_portrait.jpg"
+    title: "About",
+    description: "Learn more about the updated site, services, and contact options.",
+    url: "about.html",
+    image: "Portfolio/myPhoto.jpg"
   },
   {
-    title: "Cocoa Site",
-    description: "A Bootstrap-powered cocoa project that demonstrates responsive design and content structure.",
-    url: "Portfolio/Cocoa/index.html",
-    image: "Portfolio/Cocoa/images/cocoabar.jpg"
-  },
-  {
-    title: "Montessori Project",
-    description: "A website focused on Montessori philosophy and learning resources.",
-    url: "Portfolio/Philosophy/index.html",
-    image: "Portfolio/Philosophy/imgs/blocksimg.jpg"
-  },
-  {
-    title: "About Norway",
-    description: "Open the React app that showcases your local Norway project with modern frontend interaction.",
-    url: "Portfolio/AboutNorway/dist/index.html",
+    title: "Projects",
+    description: "View the refreshed projects page and see the current work samples.",
+    url: "Projects.html",
     image: "Portfolio/Final/images/catDot.jpg"
   }
 ];
@@ -35,10 +23,7 @@ const reviewPages = [
   { label: "Home", url: "index.html" },
   { label: "About", url: "about.html" },
   { label: "Projects", url: "Projects.html" },
-  { label: "Review Hub", url: "review-pages.html" },
-  { label: "Rover & Whiskers", url: "Portfolio/Final/HomePage.html" },
-  { label: "Savanna’s Coffee House", url: "Portfolio/FinalProject/Index.html" },
-  { label: "Cocoa Site", url: "Portfolio/Cocoa/index.html" }
+  { label: "Review Hub", url: "review-pages.html" }
 ];
 
 function createProjectCard(project) {
