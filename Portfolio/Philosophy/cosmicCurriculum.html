@@ -1,0 +1,107 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="The Cosmic Curriculum in Montessori Education">
+    <meta name="Keywords" content="Montessori, Cosmic Curriculum, Elementary, Education">
+    <link href="../Philosophy/style/style.scss" rel="stylesheet">
+    <link href="../Philosophy/style/style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="curriculum">
+    <div id="container">
+        <nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mariaLife.html">About Maria Montessori</a></li>
+                <li><a href="guidingPrinciples.html">Principles</a></li>
+                <li><a href="Planes.html">Planes of Development</a></li>
+                <li><a href="perriod.html">Three Period Lesson</a></li>
+                <li><a href="transform.html">Transform</a></li>
+                <li><a href="normalize.html">Normalize</a></li>
+                <li><a href="slides.html">Slides</a></li>
+                <li class="dropdown">
+                    <a href="#">Elementary Curriculum</a>
+                    <ul class="dropdown-content">
+                        <li><a href="cosmicCurriculum.html" class="active">The Cosmic Curriculum</a></li>
+                        <li><a href="spiralCurriculum.html">Spiral Curriculum</a></li>
+                        <li><a href="followTheChild.html">Follow the Child</a></li>
+                    </ul>
+                </li>
+                <li><a href="glossary.html">Glossary</a></li>
+                <li class="dropdown">
+                    <a href="#">Classroom Management</a>
+                    <ul class="dropdown-content">
+                        <li><a href="observation.html">Observation</a></li>
+                        <li><a href="GraceandCourtesy.html">Grace and Courtesy</a></li>
+                        <li><a href="comunitybuilding.html">Community Building</a></li>
+                        <li><a href="guidence.html">Informed Guidance/Positive Discipline</a></li>
+                        <li><a href="record.html">Record Keeping</a></li>
+                        <li><a href="rights.html">Rights and Responsibilities</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Classroom Set up</a>
+                    <ul class="dropdown-content">
+                        <li><a href="classroom.html">Classroom</a></li>
+                        <li><a href="material.html">Materials</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <header>
+            <h1>The Cosmic Curriculum</h1>
+        </header>
+        <section class="about cosmic-page">
+            <article class="cosmic-hero">
+                <h2>The Cosmic Curriculum</h2>
+                <p>The Cosmic Curriculum is an idea from Maria Montessori that helps children see how everything in the world is connected. Instead of learning subjects like science, history, and geography as completely separate areas, students begin to understand how they relate to each other.</p>
+                <p>In Lower Elementary (EL I), this is mostly introduced through big stories and simple ideas that spark curiosity about the world.</p>
+            </article>
+            <div class="cosmic-grid">
+                <article class="cosmic-block">
+                    <h3>What It Looks Like in the Classroom</h3>
+                    <p>In my classroom, this shows up through stories, lessons, and materials that naturally connect across subjects. Learning is not always split into separate blocks, instead ideas often overlap.</p>
+                    <p>For example, a story about animals might lead into geography, like where they live, or science, like what they need to survive. Students start to see that everything is connected.</p>
+                    <p>We also use large introduction lessons, sometimes called the Great Lessons, to introduce these big ideas. The Great Lessons are the cornerstone of the Cosmic Curriculum and should be taught with intention. Many lessons circle back to the Great Lessons over time.</p>
+                </article>
+                <article class="cosmic-block">
+                    <h3>Big Ideas that Connect</h3>
+                    <p>For example, “remember when we learned about how the universe began?” can be a starting point to explore how space works and how it connects back to earlier learning. Or, “remember the first humans, they needed things,” can lead into studying the interdependence of early humans and how they met their needs.</p>
+                </article>
+                <article class="cosmic-block">
+                    <h3>The Teacher’s Role</h3>
+                    <p>My role is to introduce big ideas in a way that is engaging and appropriate for Lower Elementary (EL I), and then follow where the students take it.</p>
+                    <p>Some students may become interested in space, others in plants or animals. I support those interests by providing materials, guidance, and space for exploration.</p>
+                </article>
+                <article class="cosmic-block highlight-block">
+                    <h3>Why It Matters</h3>
+                    <p>For Lower Elementary students, the goal is not memorizing facts, but building curiosity and connection. The Cosmic Curriculum helps them see that the world is big, connected, and something they can explore and understand.</p>
+                    <p>It encourages them to ask questions like “how does this work?” and “why is this important?” instead of just looking for one correct answer.</p>
+                </article>
+            </div>
+        </section>
+        <footer>
+            <p>Ruth Ann Aakre</p>
+            <p>Montessori Guided Studies</p>
+        </footer>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            const menuToggle = document.getElementById('mobile-menu');
+            const navList = document.querySelector('nav ul');
+            if(menuToggle){
+                menuToggle.addEventListener('click', function(){
+                    navList.classList.toggle('active');
+                });
+            }
+        });
+    </script>
+</body>
+</html>

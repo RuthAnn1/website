@@ -1,0 +1,110 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Montessori Philosophy Assignment">
+    <meta name="Keywords" content="Ruth Ann, Web Deveopment, CSS, HTML, Front End">
+    <link href="../Philosophy/style/style.scss" rel="stylesheet">
+    <link href="../Philosophy/style/style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id='container'>
+    <nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+         <ul class="nav">
+  <li><a href="index.html" class="active">Home</a></li>
+  <li><a href="mariaLife.html">About Maria Montessori</a></li>
+  <li><a href="guidingPrinciples.html">Principles</a></li>
+  <li><a href="Planes.html">Planes of Development</a></li>
+  <li><a href="perriod.html">Three Period Lesson</a></li>
+   <li><a href="transform.html">Transform</a> </li>
+    <li><a href="normalize.html">Normalize</a></li>
+    <li><a href="slides.html">Slides</a></li>    <li class="dropdown">
+        <a href="#">Elementary Curriculum</a>
+        <ul class="dropdown-content">
+            <li><a href="cosmicCurriculum.html">The Cosmic Curriculum</a></li>
+            <li><a href="spiralCurriculum.html">Spiral Curriculum</a></li>
+            <li><a href="followTheChild.html">Follow the Child</a></li>
+        </ul>
+    </li>    <li><a href="glossary.html">Glossary</a></li>
+
+  <li class="dropdown">
+    <a href="#">Classroom Management</a>
+    <ul class="dropdown-content">
+      <li><a href="observation.html">Observation</a></li>
+      <li><a href="GraceandCourtesy.html">Grace and Courtesy</a></li>
+      <li><a href="comunitybuilding.html">Community Building</a></li>
+      <li><a href="guidence.html">Informed Guidance/Positive Discipline</a></li>
+      <li><a href="record.html">Record Keeping</a></li>
+      <li><a href="rights.html">Rights and Responsibilities</a></li>
+
+    </ul>
+  </li>
+   <li class="dropdown">
+        <a href="#">Classroom Set up</a>
+        <ul class="dropdown-content">
+            <li><a href="classroom.html">Classroom</a></li>
+            <li><a href="material.html">Materials</a></li>
+        </ul>
+    </li>
+</ul>
+
+    </nav>
+    <header>
+        <h1>About the Site </h1>
+    </header>
+    <section class="blocks">
+        <img src="imgs/blocksimg.jpg" alt="blocks">
+    </section>
+    
+    <section class="about">
+        <article class="site">
+            <h2>Welcome to the Site</h2>
+                <p>This site is dedicated to Maria Montessori and the revolutionary philosophy she created. Here, you will find a variety of useful pages to explore.</p>
+                <ul>
+                <li>For information about Maria Montessori, feel free to click <a href="mariaLife.html">here.</a></li>
+                <li>To learn about the guiding principles of Montessori education, please click<a href="guidingPrinciples.html">here.</a></li>
+                <li>For details on the second plane of development, click <a href="Planes.html"> here.</a></li>
+            </ul>
+        </article>
+        <article class="Maria">
+            <h2>Maria Montessori Informational Page</h2>
+                <p>This page offers insight into who Maria Montessori was—a visionary, reformer, feminist, and more. If you're looking for a comprehensive overview of her life and contributions, this is a great place to start. Like many others, I didn’t know much about her until recently, and I’ve included as much information as possible to provide a full picture of her remarkable legacy.</p>
+        </article>
+        <article class="Guiding"> 
+            <h2>Guiding Principles Page</h2>
+                <p>This page dives into the guiding principles of Montessori education. Here, you’ll find an in-depth look at what makes Montessori education unique. It includes a variety of key concepts that form the cornerstone of this educational philosophy.</p>
+        </article>
+        <article class="Planes"> 
+            <h2>Planes of Development Page</h2>
+                <p>Montessori education is built on three planes of development. This page focuses on the second plane, which covers ages 6–12. It explains the sensitive periods, human tendencies, and developmental characteristics associated with this stage.</p>
+        </article>
+        <article class="thankyou">
+                <h2>Thank You</h2>
+             <p>Thank you for visiting this site. I hope it provides you with valuable information and inspires further exploration into Montessori education.</p>
+        </article>
+            </section>
+    <footer>
+       <p>Ruth Ann Aakre</p>
+       <p>Montessori Guided Studies</p>
+    </footer>
+    </div><script>
+// hamburger toggle script
+document.addEventListener('DOMContentLoaded', function(){
+  const menuToggle = document.getElementById('mobile-menu');
+  const navList = document.querySelector('nav ul');
+  if(menuToggle){
+    menuToggle.addEventListener('click', function(){
+      navList.classList.toggle('active');
+    });
+  }
+});
+</script></body>
